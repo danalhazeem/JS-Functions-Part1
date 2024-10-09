@@ -4,7 +4,7 @@
  * - that just prints your name on the screen
  */
 function printName() {
-    console.log("danah alhazeem")
+  console.log("danah alhazeem");
 }
 printName();
 
@@ -16,8 +16,8 @@ printName();
  * - Age = current year - birth
  */
 function printAge(birthyear) {
-    Age = 2024 - birthyear;
-    console.log(Age)  
+  let age = 2024 - birthyear;
+  console.log(age);
 }
 printAge(2000);
 
@@ -28,11 +28,11 @@ printAge(2000);
  * - and prints 'Hello NAME you are AGE years old' on the screen.
  * - Age = current year - birth
  */
-function printAgeAndName(birthyear,name) {
-     Age = 2024 - birthyear
-    console.log(`hello ${name} you are ${Age}`)
+function printAgeAndName(birthyear, name) {
+  let age = 2024 - birthyear;
+  console.log(`hello ${name} you are ${age}`);
 }
-printAgeAndName(2000,"danah");
+printAgeAndName(2000, "danah");
 
 /**
  * Task 4:
@@ -44,14 +44,18 @@ printAgeAndName(2000,"danah");
  * -- fr: it should print `Bonjour NAME`
  * -- tr: it should print `Merhaba NAME`
  */
-function printHello(name,language) {
-    if (language=="en") {console.log(`Hello ${name}`) } 
-    else if (language=="es"){console.log(`Hola ${name}`) }
-    else if (language=="fr"){console.log(`Bonjour ${name}`) }
-    else if (language=="tr"){console.log(`Merhaba ${name}`) }
+function printHello(name, language) {
+  if (language == "en") {
+    console.log(`Hello ${name}`);
+  } else if (language == "es") {
+    console.log(`Hola ${name}`);
+  } else if (language == "fr") {
+    console.log(`Bonjour ${name}`);
+  } else if (language == "tr") {
+    console.log(`Merhaba ${name}`);
+  }
 }
-printHello("danah","es");
-
+printHello("danah", "es");
 
 /**
  * Task 5:
@@ -59,9 +63,11 @@ printHello("danah","es");
  * - that takes 2 parameters as numbers
  * - should print out the bigger number
  */
-function printMax(num1,num2) {
-    if (num1>num2){console.log(num1)}
-    else{console.log(num2)}
-    
+function printMax(num1, num2) {
+  if (num1 > num2) {
+    console.log(num1);
+  } else {
+    console.log(num2);
+  }
 }
-printMax(5,9);
+printMax(5, 9);
